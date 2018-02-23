@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script>
+
+<style> 
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    border: solid 1px #c3c3c3;
+}
+.search{
+    width:100%;
+    display:inline-block;
+}
+#flip{
+    display: inline-block;
+    width: auto;
+    float: left;
+}
+#panel {
+    width: 31%;
+    float: left;
+    display: none;
+    margin: 0;
+}
+</style>
+</head>
+<body>  
+<div class="search">
+<div id="flip"><img src="img/hearth.png"></div>
+<div id="panel"><input type="text" name="pencarian" class="cari"></div>
+</div>
+</body>
+</html>
